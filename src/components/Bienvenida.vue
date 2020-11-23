@@ -14,7 +14,8 @@
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
-  height:90vh;
+  height:100vh;
+
 }
 
 .logoHeader {
@@ -44,6 +45,8 @@
   margin-bottom: 2%;
   padding: 10px;
   background-color: #a876fe;
+  color: white;
+
 }
 
 .splash {
@@ -51,26 +54,41 @@
   width: 75%;
   height: 75%;
 }
+
+.navbar{
+  background-color: #414550;
+  outline: 1px solid white;
+}
+
+.centerNavElements{
+  align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+}
+
 </style>
 
 <template>
-
-<b-container fluid>
+<!--b-container fluid-->
     <div>
         <div>
-            <b-navbar toggleable="lg" type="dark" variant="info">
-                <b-navbar-brand href>  <img class="logoHeader" src="..\assets\LogoApp.png" alt="logo"> </b-navbar-brand>
+            <b-navbar  class="navbar" toggleable="lg" type="dark" >
+                <b-navbar-brand href><img class="logoHeader" src="..\assets\LogoApp.png" alt="logo"> </b-navbar-brand>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
                     <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
-                        <b-navbar-nav>
+                        <b-navbar-nav class="centerNavElements">
                             <b-nav-item href="#">Bienvenida</b-nav-item>
                             <b-nav-item href="#">Sobre Nosotros</b-nav-item>
+                            <b-nav-item href="#">Contactanos</b-nav-item>
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>
-            </b-navbar>
+            </b-navbar> <!--de quien es esto?--> <!--del navbar, si se quita esa madre ocurre error-->
         </div>
         <div class="maincontainer">
             <b-container fluid>
@@ -79,7 +97,7 @@
                         Inicie a usar cualquier herramienta colaborativa hoy.</h1>
                 </b-row>
                 <b-row>
-                    <b-button class="button" size="lg" >Inicio</b-button>
+                  <router-link :to="{ name: 'Menu'}" class="button" size="lg">Inicia</router-link>
                 </b-row>
                 <b-row>
                   <img class="splash" src="..\assets\splash.png" alt="logo">
@@ -87,7 +105,6 @@
             </b-container>
         </div>
     </div>
-</b-container>
 </template>
 
 <script>

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Bienvenida/>
     <router-view/>
   </div>
 </template>
@@ -19,6 +18,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #31495E;
+  background-color: #31495E;
 }
 </style>
