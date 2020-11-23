@@ -1,5 +1,9 @@
 <style>
 
+.container-fluid{
+  padding: 0;
+}
+
 .maincontainer {
   /*border-radius: 25px;*/
   display: flex;
@@ -10,8 +14,7 @@
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
-  height:80vh;
-
+  height:90vh;
 }
 
 .logoHeader {
@@ -84,8 +87,6 @@
             </b-container>
         </div>
     </div>
-    <footer class="footer">
-    </footer>
 </b-container>
 </template>
 
