@@ -48,11 +48,14 @@
   width: 75%;
   height: 75%;
 }
+
+.body{
+  background-color: red;
+}
 </style>
 
 <template>
-
-<b-container fluid>
+<!--b-container fluid-->
     <div>
         <div>
             <b-navbar toggleable="lg" type="dark" variant="info">
@@ -84,9 +87,9 @@
             </b-container>
         </div>
     </div>
-    <footer class="footer">
+    <!--footer class="footer">
     </footer>
-</b-container>
+<!--/b-container-->
 </template>
 
 <script>
