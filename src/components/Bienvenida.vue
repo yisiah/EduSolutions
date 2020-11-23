@@ -30,8 +30,9 @@
 .titulo {
   color: white;
   margin: auto;
-  width: 55%;
+  width: 70%;
   font-weight: bold;
+  font-size: 2.0rem;
 }
 
 .button {
@@ -44,8 +45,8 @@
 
 .splash {
   margin: auto;
-  width: 85%;
-  height: 85%;
+  width: 75%;
+  height: 75%;
 }
 </style>
 
