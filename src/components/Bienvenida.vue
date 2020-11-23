@@ -10,7 +10,7 @@
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
-  height:80vh;
+  height:100vh;
 
 }
 
@@ -49,8 +49,8 @@
   height: 75%;
 }
 
-.body{
-  background-color: red;
+.navbar{
+  background-color: red;/*quiero dar color al navbar completo #31495E*/
 }
 </style>
 
@@ -58,8 +58,8 @@
 <!--b-container fluid-->
     <div>
         <div>
-            <b-navbar toggleable="lg" type="dark" variant="info">
-                <b-navbar-brand href>  <img class="logoHeader" src="..\assets\LogoApp.png" alt="logo"> </b-navbar-brand>
+            <b-navbar  toggleable="lg" type="dark" variant="info">
+                <b-navbar-brand href><img class="logoHeader" src="..\assets\LogoApp.png" alt="logo"> </b-navbar-brand>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
                     <!-- Right aligned nav items -->
@@ -70,7 +70,7 @@
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>
-            </b-navbar>
+            </b-navbar> <!--de quien es esto?-->
         </div>
         <div class="maincontainer">
             <b-container fluid>
@@ -79,7 +79,7 @@
                         Inicie a usar cualquier herramienta colaborativa hoy.</h1>
                 </b-row>
                 <b-row>
-                    <b-button class="button" size="lg" >Inicio</b-button>
+                  <router-link :to="{ name: 'Menu'}" class="button" size="lg">Inicia</router-link>
                 </b-row>
                 <b-row>
                   <img class="splash" src="..\assets\splash.png" alt="logo">
