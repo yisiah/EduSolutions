@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 import Bienvenida from '../components/Bienvenida'
 import menu from '../components/menu'
 import PrimerosPasosZoom from '../components/PrimerosPasosZoom'
+import contenidoZoom from '../components/contenidoZoom'
 
 Vue.use(Router)
+Vue.use(BootstrapVueIcons)
 
 export default new Router({
   routes: [
@@ -28,6 +31,11 @@ export default new Router({
       path: '/PrimerosPasosZoom',
       name: 'PrimerosPasosZoom',
       component: PrimerosPasosZoom
-    }
+    },
+    {
+      path: '/contenidoZoom',
+      name: 'contenidoZoom',
+      component: contenidoZoom
+    },
   ]
 })

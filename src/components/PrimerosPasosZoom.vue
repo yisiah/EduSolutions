@@ -124,7 +124,7 @@
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
                     ¿Como descargar zoom?
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoZoom'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
