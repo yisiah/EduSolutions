@@ -131,31 +131,102 @@
                 </b-button>
                 <b-sidebar id="sidebar-1" shadow>
                     <img class="logoZoom" src="..\assets\logoZoom.png" alt="lZoom" height="15%" width="60%">
-                    <div class="px-3 py-2">
-                        <b-dropdown id="descargaZ" block text="¿Como descargar Zoom?" class="m-2">
-                            <b-dropdown-item href="#">Instalacion desde Windows</b-dropdown-item>
-                            <b-dropdown-item href="#">Instalacion desde MAC</b-dropdown-item>
-                            <b-dropdown-item href="#">Instalacion desde Android</b-dropdown-item>
-                            <b-dropdown-item href="#">Instalacion desde iOS</b-dropdown-item>
-                        </b-dropdown>
-                        <b-dropdown id="cuentaZ" block text="¿Como crer una cuenta?" class="m-2">
-                            <b-dropdown-item href="#">Crear una cuenta desde Windows</b-dropdown-item>
-                            <b-dropdown-item href="#">Crear una cuenta desde MAC</b-dropdown-item>
-                            <b-dropdown-item href="#">Crear una cuenta desde Android</b-dropdown-item>
-                            <b-dropdown-item href="#">Crear una cuenta desde iOS</b-dropdown-item>
-                        </b-dropdown>
-                        <b-dropdown id="pReunionAdminZ" block text="Mi primera reunion (Administrador)." class="m-2">
-                            <b-dropdown-item href="#">Primera reunion Windows (Administrador)</b-dropdown-item>
-                            <b-dropdown-item href="#">Primera reunion MAC (Administrador)</b-dropdown-item>
-                            <b-dropdown-item href="#">Primera reunion Android (Administrador)</b-dropdown-item>
-                            <b-dropdown-item href="#">Primera reunion iOS (Administrador)</b-dropdown-item>
-                        </b-dropdown>
-                        <b-dropdown id="pReunionAdminZ" block text="Mi primera reunion (Invitado)." class="m-2">
-                            <b-dropdown-item href="#">Primera reunion Windows (Invitado)</b-dropdown-item>
-                            <b-dropdown-item href="#">Primera reunion MAC (Invitado)</b-dropdown-item>
-                            <b-dropdown-item href="#">Primera reunion Android (Invitado)</b-dropdown-item>
-                            <b-dropdown-item href="#">Primera reunion iOS (Invitado)</b-dropdown-item>
-                        </b-dropdown>
+                    <div class="accordion" role="tablist">
+                        <b-card no-body class="mb-1">
+                            <b-card-header header-tag="header" class="p-1" role="tab">
+                                <b-button block v-b-toggle.accordion-1 variant="info">¿Como descargar Zoom?</b-button>
+                            </b-card-header>
+                            <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                                <b-card-body>
+                                    <b-col>
+                                        <b-row>
+                                            <b-button block variant="light">{{windows}}</b-button>
+                                        </b-row>
+                                        <b-row>
+                                            <b-button block variant="light">{{mac}}</b-button>
+                                        </b-row>
+                                        <b-row>
+                                            <b-button block variant="light">{{ios}}</b-button>
+                                        </b-row>
+                                        <b-row>
+                                            <b-button block variant="light">{{android}}</b-button>
+                                        </b-row>
+                                    </b-col>
+                                </b-card-body>
+                            </b-collapse>
+                        </b-card>
+
+                        <b-card no-body class="mb-1">
+                            <b-card-header header-tag="header" class="p-1" role="tab">
+                                <b-button block v-b-toggle.accordion-2 variant="info">¿Como crear una cuenta?</b-button>
+                            </b-card-header>
+                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                                  <b-card-body>
+                                      <b-col>
+                                          <b-row>
+                                              <b-button block variant="light">{{windows}}</b-button>
+                                          </b-row>
+                                          <b-row>
+                                              <b-button block variant="light">{{mac}}</b-button>
+                                          </b-row>
+                                          <b-row>
+                                              <b-button block variant="light">{{ios}}</b-button>
+                                          </b-row>
+                                          <b-row>
+                                              <b-button block variant="light">{{android}}</b-button>
+                                          </b-row>
+                                      </b-col>
+                                  </b-card-body>
+                            </b-collapse>
+                        </b-card>
+
+                        <b-card no-body class="mb-1">
+                            <b-card-header header-tag="header" class="p-1" role="tab">
+                                <b-button block v-b-toggle.accordion-3 variant="info">Mi primera reunion(Admin)</b-button>
+                            </b-card-header>
+                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                              <b-card-body>
+                                  <b-col>
+                                      <b-row>
+                                          <b-button block variant="light">{{windows}}</b-button>
+                                      </b-row>
+                                      <b-row>
+                                          <b-button block variant="light">{{mac}}</b-button>
+                                      </b-row>
+                                      <b-row>
+                                          <b-button block variant="light">{{ios}}</b-button>
+                                      </b-row>
+                                      <b-row>
+                                          <b-button block variant="light">{{android}}</b-button>
+                                      </b-row>
+                                  </b-col>
+                              </b-card-body>
+                            </b-collapse>
+                        </b-card>
+
+                        <b-card no-body class="mb-1">
+                            <b-card-header header-tag="header" class="p-1" role="tab">
+                                <b-button block v-b-toggle.accordion-4 variant="info">Mi primera reunion(Inv)</b-button>
+                            </b-card-header>
+                            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+                              <b-card-body>
+                                  <b-col>
+                                      <b-row>
+                                          <b-button block variant="light">{{windows}}</b-button>
+                                      </b-row>
+                                      <b-row>
+                                          <b-button block variant="light">{{mac}}</b-button>
+                                      </b-row>
+                                      <b-row>
+                                          <b-button block variant="light">{{ios}}</b-button>
+                                      </b-row>
+                                      <b-row>
+                                          <b-button block variant="light">{{android}}</b-button>
+                                      </b-row>
+                                  </b-col>
+                              </b-card-body>
+                            </b-collapse>
+                        </b-card>
                     </div>
                 </b-sidebar>
             </div>
@@ -179,7 +250,7 @@
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row >
+                <b-row>
                     <b-col>
                         <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
                             <b-card-text>
@@ -214,7 +285,7 @@
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row >
+                <b-row>
                     <b-col>
                         <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
                             <b-card-text>
@@ -249,7 +320,7 @@
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row >
+                <b-row>
                     <b-col>
                         <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
                             <b-card-text>
@@ -284,7 +355,7 @@
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row >
+                <b-row>
                     <b-col>
                         <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
                             <b-card-text>
@@ -313,7 +384,10 @@ export default {
     name: 'contenidoZoom',
     data() {
         return {
-
+            windows: 'Desde Windows',
+            mac: 'Desde MAC',
+            ios: 'Desde iOS',
+            android: 'Desde Android'
         }
     },
     template: {
