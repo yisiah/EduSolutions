@@ -98,18 +98,26 @@
                 </b-row>
                 <b-row >
                     <b-col lg="4" class="pb-2 buttonMenu ">
+                        <router-link :to="{ name: 'PrimerosPasosKhan'}"size="lg">
                         <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\khanA.png" alt="khanAcademy"></b-button>
+                        </router-link>
                     </b-col>
                     <b-col lg="4" class="pb-2 buttonMenu">
+                        <router-link :to="{ name: 'PrimerosPasosTeams'}"size="lg">
                         <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\teams.png" alt="teams"></b-button>
+                        </router-link>
                     </b-col>
                     <b-col lg="4" class="pb-2 buttonMenu">
+                        <router-link :to="{ name: 'PrimerosPasosMeet'}"size="lg">
                         <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\meet.png" alt="googleMeet"></b-button>
+                        </router-link>
                     </b-col>
                 </b-row>
                 <b-row >
                     <b-col lg="4" class="pb-2 buttonMenu">
+                        <router-link :to="{ name: 'PrimerosPasosEdmodo'}"size="lg">
                         <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\edmodo.png" alt="edmodo"></b-button>
+                        </router-link>
                     </b-col>
                     <b-col lg="4" class="pb-2 buttonMenu">
                         <router-link :to="{ name: 'PrimerosPasosZoom'}"size="lg">
@@ -117,7 +125,9 @@
                         </router-link>
                     </b-col>
                     <b-col lg="4" class="pb-2 buttonMenu">
+                        <router-link :to="{ name: 'PrimerosPasosClassroom'}"size="lg">
                         <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\classroom.png" alt="googleClassroom"></b-button>
+                        </router-link>
                     </b-col>
                 </b-row>
             </b-container>
