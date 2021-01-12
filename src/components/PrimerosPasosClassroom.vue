@@ -7,11 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
-  height:100vh;
-
 }
 
 .logoHeader {
@@ -118,24 +115,24 @@
                 </b-row>
                 <b-row>
                     <b-col lg="4" class="pb-2 buttonMenu">
-                        <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\teams.png" alt="teams"></b-button>
+                        <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\classroom.png" alt="classroom"></b-button>
                     </b-col>
                 </b-row>
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
-                    ¿Como ingresar a Khan Academy?
-                    <router-link :to="{ name: 'contenidoTeams'}" class="buttonList" size="lg" > Ir </router-link>
+                    ¿Como descargo Google Classroom?
+                    <router-link :to="{ name: 'contenidoZoom'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
                     <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    Ingresar a una clase***.
+                    Mi primera reunion (Administrador).
                     <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
-                    Empezar un curso.
+                    Mi primera reunion (Invitado).
                     <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
@@ -147,7 +144,7 @@
 <script>
 
 export default {
-    name: 'PrimerosPasosTeams',
+    name: 'PrimerosPasosClassroom',
     data() {
         return {
 

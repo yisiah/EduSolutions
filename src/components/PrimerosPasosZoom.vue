@@ -7,11 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
-  height:100vh;
-
 }
 
 .logoHeader {
@@ -123,7 +120,7 @@
                 </b-row>
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
-                    ¿Como descargar zoom?
+                    ¿Como descargo Zoom?
                     <router-link :to="{ name: 'contenidoZoom'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>

@@ -74,7 +74,8 @@ export default new Router({
       path: '/contenidoEdmodo',
       name: 'contenidoEdmodo',
       component: contenidoEdmodo
-    },{
+    },
+    {
       path: '/PrimerosPasosZoom',
       name: 'PrimerosPasosZoom',
       component: PrimerosPasosZoom

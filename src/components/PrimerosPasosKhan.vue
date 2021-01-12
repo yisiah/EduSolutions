@@ -118,13 +118,13 @@
                 </b-row>
                 <b-row>
                     <b-col lg="4" class="pb-2 buttonMenu">
-                        <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\khanA.png" alt="khan"></b-button>
+                        <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\khanA.png" alt="khanA"></b-button>
                     </b-col>
                 </b-row>
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
-                    ¿Como ingresar a Khan Academy?
-                    <router-link :to="{ name: 'contenidoKhan'}" class="buttonList" size="lg" > Ir </router-link>
+                    ¿Como descargo Khan Academy?
+                    <router-link :to="{ name: 'contenidoZoom'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
