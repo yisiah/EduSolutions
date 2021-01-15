@@ -7,10 +7,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
     width: 100%;
     background-color: #31495E;
-    height: 100vh;
+
 }
 
 .logoHeader {
@@ -35,7 +34,7 @@
     color: white;
     margin: auto;
     margin-top: 3%;
-    width: 70%;
+    width: 60%;
     font-weight: bold;
     font-size: 3rem;
 }
@@ -130,145 +129,65 @@
                     <b-icon icon="card-list" aria-hidden="true"></b-icon> Contenidos
                 </b-button>
                 <b-sidebar id="sidebar-1" shadow>
-                    <img class="logoZoom" src="..\assets\logoZoom.png" alt="lZoom" height="15%" width="60%">
-                    <div class="accordion" role="tablist">
+                    <img class="logoZoom" src="..\assets\khanA.png" alt="lkhan" height="25%" width="45%">
+                    <div class="accordion mt-4" role="tablist">
                         <b-card no-body class="mb-1">
+                          <b-row class="mb-1 ml-1 mr-1">
+                              <b-button block variant="info">Accede a Khan Academy.</b-button>
+                          </b-row>
+                          <b-row class="ml-1 mr-1">
+                              <b-button block variant="info">¿Como crear una cuenta?</b-button>
+                          </b-row>
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-1 variant="info">¿Como descargar Zoom?</b-button>
+                                <b-button block v-b-toggle.accordion-1 variant="info">Primeros pasos</b-button>
                             </b-card-header>
                             <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
                                 <b-card-body>
                                     <b-col>
                                         <b-row>
-                                            <b-button block variant="light">{{windows}}</b-button>
+                                            <b-button block variant="light">Profesores</b-button>
                                         </b-row>
                                         <b-row>
-                                            <b-button block variant="light">{{mac}}</b-button>
-                                        </b-row>
-                                        <b-row>
-                                            <b-button block variant="light">{{ios}}</b-button>
-                                        </b-row>
-                                        <b-row>
-                                            <b-button block variant="light">{{android}}</b-button>
+                                            <b-button block variant="light">Alumnos</b-button>
                                         </b-row>
                                     </b-col>
                                 </b-card-body>
-                            </b-collapse>
-                        </b-card>
-
-                        <b-card no-body class="mb-1">
-                            <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-2 variant="info">¿Como crear una cuenta?</b-button>
-                            </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-                                  <b-card-body>
-                                      <b-col>
-                                          <b-row>
-                                              <b-button block variant="light">{{windows}}</b-button>
-                                          </b-row>
-                                          <b-row>
-                                              <b-button block variant="light">{{mac}}</b-button>
-                                          </b-row>
-                                          <b-row>
-                                              <b-button block variant="light">{{ios}}</b-button>
-                                          </b-row>
-                                          <b-row>
-                                              <b-button block variant="light">{{android}}</b-button>
-                                          </b-row>
-                                      </b-col>
-                                  </b-card-body>
-                            </b-collapse>
-                        </b-card>
-
-                        <b-card no-body class="mb-1">
-                            <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-3 variant="info">Mi primera reunion(Admin)</b-button>
-                            </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                              <b-card-body>
-                                  <b-col>
-                                      <b-row>
-                                          <b-button block variant="light">{{windows}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{mac}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{ios}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{android}}</b-button>
-                                      </b-row>
-                                  </b-col>
-                              </b-card-body>
-                            </b-collapse>
-                        </b-card>
-
-                        <b-card no-body class="mb-1">
-                            <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-4 variant="info">Mi primera reunion(Inv)</b-button>
-                            </b-card-header>
-                            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-                              <b-card-body>
-                                  <b-col>
-                                      <b-row>
-                                          <b-button block variant="light">{{windows}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{mac}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{ios}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{android}}</b-button>
-                                      </b-row>
-                                  </b-col>
-                              </b-card-body>
                             </b-collapse>
                         </b-card>
                     </div>
                 </b-sidebar>
             </div>
 
-            <h1 class="titulo">¿Como descargar Zoom?</h1>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3">Descarga desde windows</h2>
+            <h1 class="titulo">Acceder a Khan Academy</h1>
+            <div class="container mt-4 ">
                 <b-row class="mb-2">
                     <b-col>
-                        <b-card class="lightCard" title="Paso 1 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
+                        <b-card class="lightCard" title="Opcion 1 - Desde el navegador">
+                            <b-card-text class="text-justify">
+                                El primer paso para ingresar es buscar desde el navegador de su preferencia
+                                "Khan Academy". A continuacion dará clic en el primer resultado que aparece
+                                entre los resultados de las busquedas.
                             </b-card-text>
                         </b-card>
                     </b-col>
                     <b-col>
-                        <b-card class="darkCard" title="Paso 2 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
+                        <b-card class="darkCard" title="Opcion 2 - Ingreso desde link">
+                            <b-card-text class="text-justify">
+                                Si desea ingresar ahora al sitio para poder probarlo puede ingresar mediante
+                                el siguiente Link, el cual le redireccionará a la pagina.
+                                <br>
+                                <div class="text-center">
+                                  <b-link href="https://es.khanacademy.org">Ir a la plataforma</b-link>
+                                </div>
+
                             </b-card-text>
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
+
             </div>
             <div class=" container mt-4 ">
-                <h2 class="titulo mb-3">Descarga desde MAC</h2>
+                <h2 class="titulo mb-3">¿Como crear una cuenta?</h2>
                 <b-row class="mb-2">
                     <b-col>
                         <b-card class="lightCard" title="Paso 1 - Alguna instruccion">

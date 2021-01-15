@@ -7,8 +7,10 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
     width: 100%;
     background-color: #31495E;
+    height:100vh;
 }
 
 .logoHeader {
@@ -129,7 +131,7 @@
                 </b-button>
                 <b-sidebar id="sidebar-1" shadow>
                     <img class="logoZoom" src="..\assets\logoZoom.png" alt="lZoom" height="15%" width="60%">
-                    <div class="accordion" role="tablist">
+                    <div class="accordion mt-4" role="tablist">
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
                                 <b-button block v-b-toggle.accordion-1 variant="info">¿Como descargar Zoom?</b-button>

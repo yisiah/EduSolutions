@@ -6,7 +6,7 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
@@ -37,7 +37,7 @@
   color: white;
   margin: auto;
   margin-top: 3%;
-  width: 70%;
+  width: 60%;
   font-weight: bold;
   font-size: 3.5rem;
 }
@@ -50,7 +50,7 @@
 
 .buttonMenu {
   margin: auto;
-  margin-top: 3%;
+  margin-top: 1%;
 
 }
 
@@ -117,25 +117,21 @@
                     <h1 class="titulo">PRIMEROS PASOS</h1>
                 </b-row>
                 <b-row>
-                    <b-col lg="4" class="pb-2 buttonMenu">
+                    <b-col lg="4" class="p-2 buttonMenu">
                         <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\khanA.png" alt="khanA"></b-button>
                     </b-col>
                 </b-row>
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
-                    ¿Como descargo Khan Academy?
-                    <router-link :to="{ name: 'contenidoZoom'}" class="buttonList" size="lg" > Ir </router-link>
+                    Accede a Khan Academy.
+                    <router-link :to="{ name: 'contenidoKhan'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
                     <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    Ingresar a una clase***.
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
-                  </b-list-group-item>
-                  <b-list-group-item>
-                    Empezar un curso.
+                    Primeros pasos.
                     <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
