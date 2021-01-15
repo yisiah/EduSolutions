@@ -9,7 +9,6 @@
     padding: 20px;
     width: 100%;
     background-color: #31495E;
-
 }
 
 .logoHeader {

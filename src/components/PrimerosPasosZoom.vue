@@ -61,8 +61,8 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 .list{
@@ -75,14 +75,12 @@
 }
 
 .buttonList {
-
   width: 10%;
   background-color: #414550;
   color: white;
   float: right;
   text-align: center;
   font-size: 80%;
-
 }
 
 </style>

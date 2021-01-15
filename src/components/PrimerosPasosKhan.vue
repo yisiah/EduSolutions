@@ -7,11 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
-  height:100vh;
-
 }
 
 .logoHeader {
@@ -23,7 +20,6 @@
 .buttonImage{
   width: 30%;
   height: 30%;
-
 }
 
 .footer {
@@ -51,7 +47,6 @@
 .buttonMenu {
   margin: auto;
   margin-top: 1%;
-
 }
 
 .navbar{
@@ -64,8 +59,8 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 .list{
@@ -85,7 +80,6 @@
   float: right;
   text-align: center;
   font-size: 80%;
-
 }
 
 </style>
