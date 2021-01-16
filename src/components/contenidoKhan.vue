@@ -8,8 +8,7 @@
     justify-content: space-between;
     padding: 20px;
     width: 100%;
-    background-color: #14BF96;
-
+    background-color: #31495E;
 }
 
 .logoHeader {
