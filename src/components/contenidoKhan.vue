@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding: 20px;
     width: 100%;
-    background-color: #31495E;
+    background-color: #14BF96;
 
 }
 
@@ -162,7 +162,7 @@
             <div class="container mt-4 ">
                 <b-row class="mb-2">
                     <b-col>
-                        <b-card class="lightCard" title="Opcion 1 - Desde el navegador">
+                        <b-card class="lightCard" title="Ingreso desde navegador">
                             <b-card-text class="text-justify">
                                 El primer paso para ingresar es buscar desde el navegador de su preferencia
                                 "Khan Academy". A continuacion dará clic en el primer resultado que aparece
@@ -171,7 +171,7 @@
                         </b-card>
                     </b-col>
                     <b-col>
-                        <b-card class="darkCard" title="Opcion 2 - Ingreso desde link">
+                        <b-card class="lightCard" title="Ingreso desde link">
                             <b-card-text class="text-justify">
                                 Si desea ingresar ahora al sitio para poder probarlo puede ingresar mediante
                                 el siguiente Link, el cual le redireccionará a la pagina.
@@ -190,32 +190,24 @@
                 <h2 class="titulo mb-3">¿Como crear una cuenta?</h2>
                 <b-row class="mb-2">
                     <b-col>
-                        <b-card class="lightCard" title="Paso 1 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
+                        <b-card class="lightCard" title="Registro">
+                            <b-card-text class="text-justify">
+                                Para disfrutar de todas las opciones que esta plataforma tiene para nosotros
+                                es necesario crear una cuenta.  <p class="font-italic">Los estudiantes menores de 13 años simplemente pueden elegir un nombre de usuario y una
+                                  contraseña. Pero deberá agregar el correo electrónico de uno de sus padres o uno de sus tutores.</p> 
+
                             </b-card-text>
                         </b-card>
                     </b-col>
                     <b-col>
-                        <b-card class="darkCard" title="Paso 2 - Alguna instruccion">
+                        <b-card class="lightCard" title="Paso 2 - Alguna instruccion">
                             <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
+                              <ol>
+                                <li>Dirigirse al boton "Registrarse"</li>
+                                <li>Identificarse en alguna de las opciones</li>
+                                <li>Llenar el formulario</li>
+                                <li>Elegir el tipo de registro</li>
+                              </ol>
                             </b-card-text>
                         </b-card>
                     </b-col>
