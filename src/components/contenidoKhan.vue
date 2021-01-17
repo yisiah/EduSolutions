@@ -105,7 +105,6 @@
             <b-navbar-brand href><img class="logoHeader" src="..\assets\LogoApp.png" alt="logo"></b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
-                <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
                     <b-navbar-nav class="centerNavElements">
                         <router-link :to="{ name: 'Bienvenida'}" size="lg">

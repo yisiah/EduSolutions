@@ -85,14 +85,12 @@
 </style>
 
 <template>
-<!--b-container fluid-->
     <div>
         <div>
             <b-navbar class="navbar" toggleable="lg" type="dark">
                 <b-navbar-brand href><img class="logoHeader" src="..\assets\LogoApp.png" alt="logo"></b-navbar-brand>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
-                    <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
                         <b-navbar-nav class="centerNavElements">
                             <router-link :to="{ name: 'Bienvenida'}"size="lg">
@@ -103,8 +101,9 @@
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>
-            </b-navbar> <!--de quien es esto?-->
+            </b-navbar>
         </div>
+
         <div class="maincontainer">
             <b-container fluid>
                 <b-row>
@@ -122,11 +121,11 @@
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoKhan'}" href="contenidoKhan/#cuenta" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
                     Primeros pasos.
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoKhan'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
             </b-container>
