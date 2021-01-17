@@ -8,13 +8,19 @@
     justify-content: space-between;
     padding: 20px;
     width: 100%;
-    background-color: #31495E;
+    background-color: #3949ab;
 }
 
 .logoHeader {
     float: left;
     width: 12%;
     height: 12%;
+}
+
+.logoSidebar {
+    width: 40%;
+    height: auto;
+    padding-bottom: 10%;
 }
 
 .buttonImage {
@@ -95,6 +101,12 @@
     align: center;
 }
 
+.capturaPantalla {
+    align: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
 </style>
 
 <template>
@@ -128,247 +140,226 @@
                     <b-icon icon="card-list" aria-hidden="true"></b-icon> Contenidos
                 </b-button>
                 <b-sidebar id="sidebar-1" shadow>
-                    <img class="logoZoom" src="..\assets\logoZoom.png" alt="lZoom" height="15%" width="60%">
+                    <img class="logoSidebar" src="..\assets\edmodo.png">
                     <div class="accordion" role="tablist">
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-1 variant="info">¿Como descargar Zoom?</b-button>
+                                <b-button href="#acceder" block variant="info">
+                                    ¿Como accedo a Edmodo?
+                                </b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-col>
-                                        <b-row>
-                                            <b-button block variant="light">{{windows}}</b-button>
-                                        </b-row>
-                                        <b-row>
-                                            <b-button block variant="light">{{mac}}</b-button>
-                                        </b-row>
-                                        <b-row>
-                                            <b-button block variant="light">{{ios}}</b-button>
-                                        </b-row>
-                                        <b-row>
-                                            <b-button block variant="light">{{android}}</b-button>
-                                        </b-row>
-                                    </b-col>
-                                </b-card-body>
-                            </b-collapse>
                         </b-card>
 
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-2 variant="info">¿Como crear una cuenta?</b-button>
+                                <b-button href="#cuenta"block variant="info">
+                                    ¿Como crear una cuenta?
+                                </b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-                                  <b-card-body>
-                                      <b-col>
-                                          <b-row>
-                                              <b-button block variant="light">{{windows}}</b-button>
-                                          </b-row>
-                                          <b-row>
-                                              <b-button block variant="light">{{mac}}</b-button>
-                                          </b-row>
-                                          <b-row>
-                                              <b-button block variant="light">{{ios}}</b-button>
-                                          </b-row>
-                                          <b-row>
-                                              <b-button block variant="light">{{android}}</b-button>
-                                          </b-row>
-                                      </b-col>
-                                  </b-card-body>
-                            </b-collapse>
                         </b-card>
 
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-3 variant="info">Mi primera reunion(Admin)</b-button>
+                                <b-button href="#profesor"block variant="info">
+                                    Primeros pasos (Profesor).
+                                </b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                              <b-card-body>
-                                  <b-col>
-                                      <b-row>
-                                          <b-button block variant="light">{{windows}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{mac}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{ios}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{android}}</b-button>
-                                      </b-row>
-                                  </b-col>
-                              </b-card-body>
-                            </b-collapse>
                         </b-card>
 
                         <b-card no-body class="mb-1">
                             <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-4 variant="info">Mi primera reunion(Inv)</b-button>
+                                <b-button href="#estudiante" block variant="info">
+                                    Primeros pasos (Estudiante).
+                                </b-button>
                             </b-card-header>
-                            <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-                              <b-card-body>
-                                  <b-col>
-                                      <b-row>
-                                          <b-button block variant="light">{{windows}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{mac}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{ios}}</b-button>
-                                      </b-row>
-                                      <b-row>
-                                          <b-button block variant="light">{{android}}</b-button>
-                                      </b-row>
-                                  </b-col>
-                              </b-card-body>
-                            </b-collapse>
                         </b-card>
                     </div>
                 </b-sidebar>
             </div>
+            <!-- inicio contenido -->
+            <div class=" container mt-4 ">
+                <h2 class="titulo mb-3" id="acceder">¿Como accedo a Edmodo?</h2>
+                <b-row class="mb-2">
+                    <b-col>
+                        <b-card class="lightCard" title="Ingreso desde navegador">
+                            <b-card-text class="text-justify">
+                                El primer paso para ingresar es buscar desde el navegador de su preferencia
+                                "Edmodo". A continuacion dará clic en el primer resultado que aparece
+                                entre los resultados de las busquedas.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Ingreso desde link">
+                            <b-card-text class="text-justify">
+                              Si desea ingresar ahora al sitio para poder probarlo puede ingresar mediante
+                              el siguiente Link, el cual le redireccionará a la pagina.
+                              <br>
+                              <div class="text-center">
+                                <b-link href="https://new.edmodo.com/">Ir a la plataforma</b-link>
+                              </div>
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                  </b-row>
+                  <img src="..\assets\pant1-edmodo.png" alt="pant1" class="capturaPantalla">
+            </div>
+            <div class=" container mt-4 ">
+                <h2 class="titulo mb-3" id="cuenta">¿Como crear una cuenta?</h2>
+                <b-row class="mb-2">
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 1 - Registro">
+                            <b-card-text>
+                                Seleccione la opción "Registrarse." en el sitio principal.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 2 ">
+                            <b-card-text>
+                                Elija una de las tres opciones que se apegue más a su rol.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                </b-row>
+                <img src="..\assets\pant2-edmodo.png" alt="pant1" class="capturaPantalla">
+                <b-row>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 3">
+                            <b-card-text>
+                                Seleccione con que servicio email quiere registrarse.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 4">
+                            <b-card-text>
+                              Si se le solicita, verifique su correo electrónico y presione <b>Siguiente.</b>
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 5">
+                            <b-card-text>
+                              Rellene la información personal y presione <b>Finalizar.</b>
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                </b-row>
+                <img src="..\assets\pant3-edmodo.png" alt="pant1" class="capturaPantalla">
+            </div>
+            <div class=" container mt-4 ">
+                <h2 class="titulo mb-3" id="profesor">Primeros pasos (Profesor).</h2>
+                <b-row class="mb-2">
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 1 ">
+                            <b-card-text>
+    	                         Vaya a <b>Edmodo,</b> e inicie sesión.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 2 ">
+                            <b-card-text>
+                                Debajo de su nombre haga clic en <b>Ver perfil.</b>
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                </b-row>
+                <img src="..\assets\pant4-edmodo.png" alt="pant1" class="capturaPantalla">
+                <b-row>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 3 ">
+                            <b-card-text>
+                                Agregue la información sobre usted que desee.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 4 ">
+                            <b-card-text>
+                                Presione el logo de <b>Edmodo</b>, y seleccione <b>Crear una clase.</b>
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 4 ">
+                            <b-card-text>
+                                Rellene la información correspondiente de su clase.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                </b-row>
+                <img src="..\assets\pant5-edmodo.png" alt="pant1" class="capturaPantalla">
+                <b-row>
+                  <b-col>
+                      <b-card class="lightCard" title="Paso 5 ">
+                          <b-card-text>
+                              Para agregar estudiantes presione Invitar.
+                          </b-card-text>
+                      </b-card>
+                  </b-col>
+                  <b-col>
+                      <b-card class="lightCard" title="Paso 6 ">
+                          <b-card-text>
+                              Elija la opción de su preferencia.
+                          </b-card-text>
+                      </b-card>
+                  </b-col>
+                </b-row>
+                <img src="..\assets\pant5-edmodo.png" alt="pant1" class="capturaPantalla">
+                <b-card class="lightCard" >
+                    <b-card-text class="text-justify" >
+                        Ahora que su cuenta esta lista le invitamos a explorar
+                         todas las posibilidades que Edmodo le ofrece, haciendo
+                         clic en <b>Crear</b> y los símbolos <b>+</b> podrá continuar su viaje por Edmodo.
+                    </b-card-text>
+                </b-card>
+            </div>
+            <div class=" container mt-4 ">
+                <h2 class="titulo mb-3" id="estudiante">Primeros pasos (Estudiante).</h2>
+                <b-row class="mb-2">
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 1 ">
+                            <b-card-text>
+                                Vaya a <b>Edmodo</b>, e inicie sesión.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                    <b-col>
+                        <b-card class="lightCard" title="Paso 2 ">
+                            <b-card-text>
+                                Seleccione el botón <b>Únete a un grupo</b>.
+                            </b-card-text>
+                        </b-card>
+                    </b-col>
+                </b-row>
+                <img src="..\assets\pant6-edmodo.png" alt="pant1" class="capturaPantalla">
 
-            <h1 class="titulo">¿Como descargar Zoom?</h1>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3">Descarga desde windows</h2>
-                <b-row class="mb-2">
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 1 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 2 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
+                <b-card class="lightCard" title="Paso 3 ">
+                    <b-card-text>
+                        Ingrese el código y presione Unirse.
+                    </b-card-text>
+                </b-card>
+                <br>
                 <b-row>
                     <b-col>
-                        <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
+                        <b-card class="lightCard" title="Paso 4 ">
+                            <b-card-text class="text-justify">
+                                En la columna izquierda usted podrá observar las
+                                separaciones de su clase a las cuales podrá acceder a su contenido haciendo clic.
+                                En la columna central se encontrará el contenido de la separación en la que usted se encuentre,
+                                y en la columna derecha se encuentra el calendario de eventos.
                             </b-card-text>
                         </b-card>
                     </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
+
                 </b-row>
-            </div>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3">Descarga desde MAC</h2>
-                <b-row class="mb-2">
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 1 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 2 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
+                <br>
                 <b-row>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
+                    <img src="..\assets\pant7-edmodo.png" alt="pant1" class="capturaPantalla" style="margin-left:auto; margin-right:auto;">
                 </b-row>
-            </div>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3">Descarga desde Android</h2>
-                <b-row class="mb-2">
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 1 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 2 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-            </div>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3">Descarga desde iOS</h2>
-                <b-row class="mb-2">
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 1 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 2 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <b-card class="darkCard" title="Paso 3 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 - Alguna instruccion">
-                            <b-card-text>
-                                Aqui iran algunas de las instrucciones.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
+
             </div>
         </b-container>
     </div>

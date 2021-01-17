@@ -119,19 +119,19 @@
                 </b-row>
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
-                    ¿Como descargo Edmodo?
-                    <router-link :to="{ name: 'contenidoZoom'}" class="buttonList" size="lg" > Ir </router-link>
+                    ¿Cómo accedo a Edmodo?
+                    <router-link :to="{ name: 'contenidoEdmodo'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
-                    ¿Como crear una cuenta?
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    ¿Cómo creo una cuenta?
+                    <router-link :to="{ name: 'contenidoEdmodo', hash: '#cuenta'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    Ingresar a una clase***.
+                    Primeros pasos (Profesor).
                     <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
-                    Empezar un curso.
+                    Primeros pasos (Estudiante).
                     <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
