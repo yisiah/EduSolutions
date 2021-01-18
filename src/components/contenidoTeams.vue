@@ -101,15 +101,12 @@
 </style>
 
 <template>
-
-  <!--b-container fluid-->
   <div>
     <div>
       <b-navbar class="navbar" toggleable="lg" type="dark">
         <b-navbar-brand href><img class="logoHeader" src="..\assets\LogoApp.png" alt="logo"></b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
-          <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav class="centerNavElements">
               <router-link :to="{ name: 'Bienvenida'}" size="lg">
@@ -121,7 +118,6 @@
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
-      <!--de quien es esto?-->
     </div>
 
     <div class="maincontainerT">
@@ -188,7 +184,7 @@
                     de escitorio, disponible en <b-link href="products.office.com/microsoft-teams">products.office.com/microsoft-teams</b-link>.
                     <p>La version de escritorio cuenta con mas opciones que la version web, por lo
                       cual recomendamos la instalacion de la misma si su equipo cuenta con los
-                      requerimientos adecuados. Puede descargar una version mobil de igual modo.</p>
+                      requerimientos adecuados. Puede descargar una version movil de igual modo.</p>
                     </b-card-text>
                   </b-card>
                 </b-col>

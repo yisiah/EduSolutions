@@ -116,21 +116,18 @@
                 </b-row>
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
-                    ¿Como descargo Google Meet?
-                    <router-link :to="{ name: 'contenidoZoom'}" class="buttonList" size="lg" > Ir </router-link>
+                    ¿Como acceder a Google Meet?
+                    <router-link :to="{ name: 'contenidoMeet'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoMeet'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    Ingresar a una clase***.
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    Primeros pasos.
+                    <router-link :to="{ name: 'contenidoMeet'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
-                  <b-list-group-item>
-                    Empezar un curso.
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
-                  </b-list-group-item>
+                </b-list-group-item>
                 </b-list-group>
             </b-container>
         </div>
