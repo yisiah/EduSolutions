@@ -36,7 +36,7 @@
   margin-top: 5%;
   width: 70%;
   font-weight: bold;
-  font-size: 2.0rem;
+  font-size: 3.0rem;
 }
 
 .splash {
@@ -77,13 +77,20 @@
                     <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
                         <b-navbar-nav class="centerNavElements">
-                            <router-link :to="{ name: 'Bienvenida'}"size="lg">
-                            <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
+                            <router-link :to="{ name: 'Bienvenida'}" tag="span" size="lg">
+                                <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                             </router-link>
+                            <router-link :to="{ name: 'SobreNosotros'}" tag="span" size="lg">
+                                <b-nav-item href="SobreNosotros">Sobre Nosotros</b-nav-item>
+                            </router-link>
+<<<<<<< HEAD
                             <b-nav-item href="#">Sobre Nosotros</b-nav-item>
                             <router-link :to="{ name: 'contacto'}"size="lg">
                               <b-nav-item href="contacto">Contactanos</b-nav-item>
                             </router-link>
+=======
+                            <b-nav-item href="#">Contactanos</b-nav-item>
+>>>>>>> a8f5fb6be9a66cda06c3ba2a074813c703c6afdb
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>

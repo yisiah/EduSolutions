@@ -28,12 +28,13 @@
   padding-bottom: 3%;
 }
 
-.titulo {
+.tituloB {
   color: white;
   margin: auto;
+  margin-top: 10px;
   width: 70%;
   font-weight: bold;
-  font-size: 2.0rem;
+  font-size: 2.5rem;
 }
 
 .button {
@@ -79,6 +80,7 @@
                     <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
                         <b-navbar-nav class="centerNavElements">
+<<<<<<< HEAD
                           <router-link :to="{ name: 'Bienvenida'}" size="lg">
                             <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                           </router-link>
@@ -86,6 +88,13 @@
                           <router-link :to="{ name: 'contacto'}"size="lg">
                             <b-nav-item href="contacto">Contactanos</b-nav-item>
                           </router-link>
+=======
+                            <b-nav-item href="#">Bienvenida</b-nav-item>
+                            <router-link :to="{ name: 'SobreNosotros'}" tag="span" size="lg">
+                                <b-nav-item href="SobreNosotros">Sobre Nosotros</b-nav-item>
+                            </router-link>
+                            <b-nav-item href="#">Contactanos</b-nav-item>
+>>>>>>> a8f5fb6be9a66cda06c3ba2a074813c703c6afdb
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>
@@ -94,11 +103,13 @@
         <div class="maincontainer">
             <b-container fluid>
                 <b-row>
-                    <h1 class="titulo">Todo el conocimiento al alcance de tus manos.<br>
+                    <h1 class="tituloB">Todo el conocimiento al alcance de tus manos.<br>
                         Inicie a usar cualquier herramienta colaborativa hoy.</h1>
                 </b-row>
                 <b-row>
-                  <router-link :to="{ name: 'Menu'}" class="button" size="lg">Inicia</router-link>
+                  <router-link :to="{ name: 'Menu'}" tag="span" size="lg" style ="display:block; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:15px;">
+                      <b-button class="button">Inicia</b-button>
+                  </router-link>
                 </b-row>
                 <b-row>
                   <img class="splash" src="..\assets\splash.png" alt="logo">

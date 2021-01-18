@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
   width: 100%;
   background-color: #31495E;
 }
@@ -95,13 +94,20 @@
                     <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
                         <b-navbar-nav class="centerNavElements">
-                            <router-link :to="{ name: 'Bienvenida'}"size="lg">
+                            <router-link :to="{ name: 'Bienvenida'}" tag="span" size="lg">
                             <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                             </router-link>
+<<<<<<< HEAD
                             <b-nav-item href="#">Sobre Nosotros</b-nav-item>
                             <router-link :to="{ name: 'contacto'}"size="lg">
                               <b-nav-item href="contacto">Contactanos</b-nav-item>
                             </router-link>
+=======
+                            <router-link :to="{ name: 'SobreNosotros'}" tag="span" size="lg">
+                                <b-nav-item href="SobreNosotros">Sobre Nosotros</b-nav-item>
+                            </router-link>
+                            <b-nav-item href="#">Contactanos</b-nav-item>
+>>>>>>> a8f5fb6be9a66cda06c3ba2a074813c703c6afdb
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>
@@ -119,20 +125,20 @@
                 </b-row>
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
-                    ¿Como ingresar a ClassRoom?
+                    ¿Cómo accedo a Classroom?
                     <router-link :to="{ name: 'contenidoClass'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
-                    ****
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    ¿Cómo creo una cuenta?
+                    <router-link :to="{ name: 'contenidoClass', hash: '#cuenta'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    ****.
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    Primeros pasos (Profesor).
+                    <router-link :to="{ name: 'contenidoClass', hash: '#profesor'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
-                    ****.
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    Primeros pasos (Alumno).
+                    <router-link :to="{ name: 'contenidoClass', hash: '#estudiante'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
             </b-container>
