@@ -83,14 +83,9 @@
                             <router-link :to="{ name: 'SobreNosotros'}" tag="span" size="lg">
                                 <b-nav-item href="SobreNosotros">Sobre Nosotros</b-nav-item>
                             </router-link>
-<<<<<<< HEAD
-                            <b-nav-item href="#">Sobre Nosotros</b-nav-item>
                             <router-link :to="{ name: 'contacto'}"size="lg">
                               <b-nav-item href="contacto">Contactanos</b-nav-item>
                             </router-link>
-=======
-                            <b-nav-item href="#">Contactanos</b-nav-item>
->>>>>>> a8f5fb6be9a66cda06c3ba2a074813c703c6afdb
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>

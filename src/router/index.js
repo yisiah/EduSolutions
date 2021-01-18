@@ -45,15 +45,14 @@ export default new Router({
       component: Bienvenida
     },
     {
-<<<<<<< HEAD
       path: '/',
       name: 'contacto',
       component: contacto
-=======
+    },
+    {
       path: '/SobreNosotros',
       name: 'SobreNosotros',
       component: SobreNosotros
->>>>>>> a8f5fb6be9a66cda06c3ba2a074813c703c6afdb
     },
     {
       path: '/menu',
