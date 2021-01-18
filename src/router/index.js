@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 import Bienvenida from '../components/Bienvenida'
+import contacto from '../components/contacto'
 import menu from '../components/menu'
 
 import PrimerosPasosKhan from '../components/PrimerosPasosKhan'
@@ -41,6 +42,11 @@ export default new Router({
       path: '/',
       name: 'Bienvenida',
       component: Bienvenida
+    },
+    {
+      path: '/',
+      name: 'contacto',
+      component: contacto
     },
     {
       path: '/menu',
