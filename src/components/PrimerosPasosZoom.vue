@@ -123,15 +123,15 @@
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoZoom', hash: '#cuenta'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    Mi primera reunion (Administrador).
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    Primeros pasos (Anfitrión)
+                    <router-link :to="{ name: 'contenidoZoom', hash: '#anfitrion'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
-                    Mi primera reunion (Invitado).
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    Primeros pasos (Invitado).
+                    <router-link :to="{ name: 'contenidoZoom', hash: '#invitado'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
             </b-container>
