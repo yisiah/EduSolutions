@@ -139,7 +139,7 @@
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
                     <b-navbar-nav class="centerNavElements">
-                        <router-link :to="{ name: 'Bienvenida'}" size="lg">
+                        <router-link :to="{ name: 'Bienvenida'}" tag="span" size="lg">
                             <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                         </router-link>
                         <b-nav-item href="#">Sobre Nosotros</b-nav-item>

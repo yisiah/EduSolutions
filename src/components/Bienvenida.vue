@@ -28,12 +28,13 @@
   padding-bottom: 3%;
 }
 
-.titulo {
+.tituloB {
   color: white;
   margin: auto;
+  margin-top: 10px;
   width: 70%;
   font-weight: bold;
-  font-size: 2.0rem;
+  font-size: 2.5rem;
 }
 
 .button {
@@ -90,11 +91,13 @@
         <div class="maincontainer">
             <b-container fluid>
                 <b-row>
-                    <h1 class="titulo">Todo el conocimiento al alcance de tus manos.<br>
+                    <h1 class="tituloB">Todo el conocimiento al alcance de tus manos.<br>
                         Inicie a usar cualquier herramienta colaborativa hoy.</h1>
                 </b-row>
                 <b-row>
-                  <router-link :to="{ name: 'Menu'}" class="button" size="lg">Inicia</router-link>
+                  <router-link :to="{ name: 'Menu'}" tag="span" size="lg" style ="display:block; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:15px;">
+                      <b-button class="button">Inicia</b-button>
+                  </router-link>
                 </b-row>
                 <b-row>
                   <img class="splash" src="..\assets\splash.png" alt="logo">
