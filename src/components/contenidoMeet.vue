@@ -138,9 +138,13 @@
                 <b-row class="m-2">
                   <b-button href="#usoM" block variant="info">¿Usando Google Meet?</b-button>
                 </b-row>
-                <b-row class="m-2">
-                  <b-button block variant="outline-primary"><router-link :to="{ name: 'Menu'}"size="lg">Otros cursos</router-link></b-button>
-                </b-row>
+              </b-card>
+              <b-card no-body class="mb-1">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                      <b-button block variant="info">
+                          <router-link :to="{ name: 'Menu'}" tag="b-card-text">Otros cursos</router-link>
+                      </b-button>
+                  </b-card-header>
               </b-card>
             </div>
           </b-sidebar>

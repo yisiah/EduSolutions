@@ -111,7 +111,9 @@
                             <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                         </router-link>
                         <b-nav-item href="#">Sobre Nosotros</b-nav-item>
-                        <b-nav-item href="#">Contactanos</b-nav-item>
+                        <router-link :to="{ name: 'contacto'}"size="lg">
+                          <b-nav-item href="contacto">Contactanos</b-nav-item>
+                        </router-link>
                     </b-navbar-nav>
                 </b-navbar-nav>
             </b-collapse>
@@ -129,30 +131,26 @@
                     <img class="logoZoom" src="..\assets\khanA.png" alt="lkhan" height="25%" width="45%">
                     <div class="accordion mt-4" role="tablist">
                         <b-card no-body class="mb-1">
-                          <b-row class="mb-1 ml-1 mr-1">
+                          <b-row class="m-1">
                               <b-button href="#acceso" block variant="info">Accede a Khan Academy.</b-button>
                           </b-row>
-                          <b-row class="ml-1 mr-1">
+                          <b-row class="ml-1">
                               <b-button href="#cuenta" block variant="info">¿Como crear una cuenta?</b-button>
                           </b-row>
-                            <b-card-header header-tag="header" class="p-1" role="tab">
-                                <b-button block v-b-toggle.accordion-1 variant="info">Primeros pasos</b-button>
-                            </b-card-header>
-                            <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
-                                <b-card-body>
-                                    <b-col>
-                                        <b-row>
-                                            <b-button href="#profesores" block variant="light">Profesores</b-button>
-                                        </b-row>
-                                        <b-row>
-                                            <b-button href="#alumnos" block variant="light">Alumnos</b-button>
-                                        </b-row>
-                                    </b-col>
-                                </b-card-body>
-                            </b-collapse>
-                            <b-row class="ml-1 mr-1">
-                                <b-button block variant="outline-primary"><router-link :to="{ name: 'Menu'}"size="lg">Otros cursos</router-link></b-button>
-                            </b-row>
+                          <b-row class="m-1">
+                              <b-button href="#profesores" block variant="info">Primero pasos (Profesores)</b-button>
+                          </b-row>
+                          <b-row class="m-1">
+                              <b-button href="#alumnos" block variant="info">Primero pasos (Alumnos)</b-button>
+                          </b-row>
+
+                          <b-card no-body class="mb-1">
+                              <b-card-header header-tag="header" class="p-1" role="tab">
+                                  <b-button block variant="info">
+                                      <router-link :to="{ name: 'Menu'}" tag="b-card-text">Otros cursos</router-link>
+                                  </b-button>
+                              </b-card-header>
+                          </b-card>
                         </b-card>
                     </div>
                 </b-sidebar>

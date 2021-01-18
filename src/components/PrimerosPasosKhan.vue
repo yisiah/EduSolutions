@@ -97,8 +97,10 @@
                             <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                             </router-link>
                             <b-nav-item href="#">Sobre Nosotros</b-nav-item>
-                            <b-nav-item href="#">Contactanos</b-nav-item>
-                        </b-navbar-nav>
+                            <router-link :to="{ name: 'contacto'}"size="lg">
+                            <b-nav-item href="contacto">Contactanos</b-nav-item>
+                            </router-link>
+                          </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>
             </b-navbar>
@@ -117,15 +119,19 @@
                   <b-list-group class="list">
                   <b-list-group-item variant="secondary">
                     Accede a Khan Academy.
-                    <router-link :to="{ name: 'contenidoKhan'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoKhan', hash: '#acceso'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
                     ¿Como crear una cuenta?
-                    <router-link :to="{ name: 'contenidoKhan'}" href="contenidoKhan/#cuenta" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoKhan', hash: '#cuenta'}" href="contenidoKhan/#cuenta" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    Primeros pasos.
-                    <router-link :to="{ name: 'contenidoKhan'}" class="buttonList" size="lg" > Ir </router-link>
+                    Primeros pasos (Profesores).
+                    <router-link :to="{ name: 'contenidoKhan', hash: '#profesores'}" class="buttonList" size="lg" > Ir </router-link>
+                  </b-list-group-item>
+                  <b-list-group-item>
+                    Primeros pasos (Alumnos).
+                    <router-link :to="{ name: 'contenidoKhan', hash: '#alumnos'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
             </b-container>

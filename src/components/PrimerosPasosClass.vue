@@ -99,7 +99,9 @@
                             <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                             </router-link>
                             <b-nav-item href="#">Sobre Nosotros</b-nav-item>
-                            <b-nav-item href="#">Contactanos</b-nav-item>
+                            <router-link :to="{ name: 'contacto'}"size="lg">
+                              <b-nav-item href="contacto">Contactanos</b-nav-item>
+                            </router-link>
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>

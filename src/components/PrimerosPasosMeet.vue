@@ -98,7 +98,9 @@
                             <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
                             </router-link>
                             <b-nav-item href="#">Sobre Nosotros</b-nav-item>
-                            <b-nav-item href="#">Contactanos</b-nav-item>
+                            <router-link :to="{ name: 'contacto'}"size="lg">
+                              <b-nav-item href="contacto">Contactanos</b-nav-item>
+                            </router-link>
                         </b-navbar-nav>
                     </b-navbar-nav>
                 </b-collapse>
@@ -114,18 +116,18 @@
                         <b-button variant="light" size="lg"><img width="120" height="120" src="..\assets\meet.png" alt="meet"></b-button>
                     </b-col>
                 </b-row>
-                  <b-list-group class="list">
+                  <b-list-group  class="list">
                   <b-list-group-item variant="secondary">
                     ¿Como acceder a Google Meet?
-                    <router-link :to="{ name: 'contenidoMeet'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoMeet', hash: '#accesoM'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
-                  <b-list-group-item>
+                  <b-list-group-item >
                     ¿Como crear una cuenta?
-                    <router-link :to="{ name: 'contenidoMeet'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoMeet', hash: '#cuentaM'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
-                    Primeros pasos.
-                    <router-link :to="{ name: 'contenidoMeet'}" class="buttonList" size="lg" > Ir </router-link>
+                    ¿Como usar Google Meet?
+                    <router-link :to="{ name: 'contenidoMeet', hash: '#usoM'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group-item>
                 </b-list-group>

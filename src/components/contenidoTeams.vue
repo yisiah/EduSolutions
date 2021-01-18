@@ -113,7 +113,9 @@
                 <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
               </router-link>
               <b-nav-item href="#">Sobre Nosotros</b-nav-item>
-              <b-nav-item href="#">Contactanos</b-nav-item>
+              <router-link :to="{ name: 'contacto'}"size="lg">
+                <b-nav-item href="contacto">Contactanos</b-nav-item>
+              </router-link>
             </b-navbar-nav>
           </b-navbar-nav>
         </b-collapse>
@@ -131,30 +133,25 @@
             <img class="logoZoom" src="..\assets\teams.png" alt="lTeams" height="25%">
             <div class="accordion mt-4" role="tablist">
               <b-card no-body class="mb-1">
-                <b-row class="mb-1 ml-1 mr-1">
+                <b-row class="m-1">
                   <b-button href="#accesoT" block variant="info">Accede a Microsoft Teams.</b-button>
                 </b-row>
-                <b-row class="ml-1 mr-1">
+                <b-row class="m-1">
                   <b-button href="#cuentaT" block variant="info">¿Como crear una cuenta?</b-button>
                 </b-row>
-                <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button block v-b-toggle.accordion-1 variant="info">Primeros pasos</b-button>
-                </b-card-header>
-                <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
-                  <b-card-body>
-                    <b-col>
-                      <b-row>
-                        <b-button href="#propietario" block variant="light">Propietario</b-button>
-                      </b-row>
-                      <b-row>
-                        <b-button href="#miembro" block variant="light">Miebro</b-button>
-                      </b-row>
-                    </b-col>
-                  </b-card-body>
-                </b-collapse>
-                <b-row class="ml-1 mr-1">
-                  <b-button block variant="outline-primary"><router-link :to="{ name: 'Menu'}"size="lg">Otros cursos</router-link></b-button>
+                <b-row class="m-1">
+                  <b-button href="#propietario" block variant="info">Primeros pasos (Propietario)</b-button>
                 </b-row>
+                <b-row class="m-1">
+                  <b-button href="#miembro" block variant="info">Primeros pasos (Miembro)</b-button>
+                </b-row>
+              </b-card>
+              <b-card no-body class="mb-1">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                      <b-button block variant="info">
+                          <router-link :to="{ name: 'Menu'}" tag="b-card-text">Otros cursos</router-link>
+                      </b-button>
+                  </b-card-header>
               </b-card>
             </div>
           </b-sidebar>
