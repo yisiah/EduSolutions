@@ -1,6 +1,6 @@
 <style>
 
-.maincontainer {
+.maincontainerEd {
     /*border-radius: 25px;*/
     display: flex;
     align-items: flex-start;
@@ -105,6 +105,24 @@
     align: center;
     margin-top: 2%;
     margin-bottom: 3%;
+    border:3px solid white;
+    border-radius: 3px;
+}
+
+.icono{
+    width: 25%;
+}
+
+.card-img-right{
+    margin-top: auto;
+    margin-bottom: auto;
+    border:5px solid white;
+}
+
+.card-img-left{
+    margin-top: auto;
+    margin-bottom: auto;
+    border:5px solid white;
 }
 
 </style>
@@ -133,7 +151,7 @@
         <!--de quien es esto?-->
     </div>
 
-    <div class="maincontainer">
+    <div class="maincontainerEd">
         <b-container fluid>
             <div>
                 <b-button class="logoHeader" variant="outline-light" v-b-toggle.sidebar-1>
@@ -173,6 +191,15 @@
                                 </b-button>
                             </b-card-header>
                         </b-card>
+
+                        <b-card no-body class="mb-1">
+                            <b-card-header header-tag="header" class="p-1" role="tab">
+                                <b-button block variant="info">
+                                    <router-link :to="{ name: 'Menu'}" tag="b-card-text">Otros cursos</router-link>
+                                </b-button>
+                            </b-card-header>
+                        </b-card>
+
                     </div>
                 </b-sidebar>
             </div>
@@ -204,162 +231,110 @@
                   </b-row>
                   <img src="..\assets\pant1-edmodo.png" alt="pant1" class="capturaPantalla">
             </div>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3" id="cuenta">¿Como crear una cuenta?</h2>
-                <b-row class="mb-2">
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 1 - Registro">
-                            <b-card-text>
-                                Seleccione la opción "Registrarse." en el sitio principal.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 2 ">
-                            <b-card-text>
-                                Elija una de las tres opciones que se apegue más a su rol.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <img src="..\assets\pant2-edmodo.png" alt="pant1" class="capturaPantalla">
-                <b-row>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 3">
-                            <b-card-text>
-                                Seleccione con que servicio email quiere registrarse.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4">
-                            <b-card-text>
-                              Si se le solicita, verifique su correo electrónico y presione <b>Siguiente.</b>
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 5">
-                            <b-card-text>
-                              Rellene la información personal y presione <b>Finalizar.</b>
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <img src="..\assets\pant3-edmodo.png" alt="pant1" class="capturaPantalla">
+            <div class=" container mt-4">
+              <h2 class="titulo mb-3" id ="cuenta">¿Como creo una cuenta?</h2>
+              <b-row class="mb-2">
+                <b-col>
+                  <b-card title="Registro" img-src="https://i.postimg.cc/W4GfxQh0/pant2-edmodo.png" img-right class="mb-3">
+                    <b-card-text class="text-justify" style="margin-top:8%;">
+                      <ol>
+                        <li>Seleccione la opción <b>"Registrarse."</b> en el sitio principal. </li>
+                        <li>Elija una de las tres opciones que se apegue más a su rol.</li>
+                      </ol>
+                    </b-card-text>
+                  </b-card>
+                </b-col>
+              </b-row>
+              <b-row class="mb-2">
+                <b-col>
+                  <b-card img-src="https://i.postimg.cc/vBLdZBXB/pant3-edmodo.png" img-left class="mb-3">
+                    <b-card-text class="text-justify" style="margin-top:8%;">
+                      <ol>
+                        <li> Seleccione con que servicio email quiere registrarse. </li>
+                        <li> Si se le solicita, verifique su correo electrónico y presione <b>Siguiente.</b></li>
+                        <li> Rellene la información personal y presione <b>Finalizar.</b></b></li>
+                      </ol>
+                    </b-card-text>
+                  </b-card>
+                </b-col>
+              </b-row>
             </div>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3" id="profesor">Primeros pasos (Profesor).</h2>
-                <b-row class="mb-2">
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 1 ">
-                            <b-card-text>
-    	                         Vaya a <b>Edmodo,</b> e inicie sesión.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 2 ">
-                            <b-card-text>
-                                Debajo de su nombre haga clic en <b>Ver perfil.</b>
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <img src="..\assets\pant4-edmodo.png" alt="pant1" class="capturaPantalla">
-                <b-row>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 3 ">
-                            <b-card-text>
-                                Agregue la información sobre usted que desee.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 ">
-                            <b-card-text>
-                                Presione el logo de <b>Edmodo</b>, y seleccione <b>Crear una clase.</b>
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 ">
-                            <b-card-text>
-                                Rellene la información correspondiente de su clase.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <img src="..\assets\pant5-edmodo.png" alt="pant1" class="capturaPantalla">
-                <b-row>
-                  <b-col>
-                      <b-card class="lightCard" title="Paso 5 ">
-                          <b-card-text>
-                              Para agregar estudiantes presione Invitar.
-                          </b-card-text>
-                      </b-card>
-                  </b-col>
-                  <b-col>
-                      <b-card class="lightCard" title="Paso 6 ">
-                          <b-card-text>
-                              Elija la opción de su preferencia.
-                          </b-card-text>
-                      </b-card>
-                  </b-col>
-                </b-row>
-                <img src="..\assets\pant5-edmodo.png" alt="pant1" class="capturaPantalla">
-                <b-card class="lightCard" >
+
+            <div class=" container mt-4">
+              <h2 class="titulo mb-3" id ="profesor">Primeros pasos (Profesor).</h2>
+              <b-row class="mb-2">
+                <b-col>
+                  <b-card title="Edita tu perfil" img-src="https://i.postimg.cc/ZnbzBSDL/pant4-edmodo.png" img-right class="mb-3">
+                    <b-card-text class="text-justify" style="margin-top:5%;">
+                      <ol>
+                        <li>Vaya a <b>Edmodo</b>, e inicie sesión. </li>
+                        <li>Debajo de su nombre haga clic en "<b>Ver perfil</b>".</li>
+                        <li> Agregue la información sobre usted que desee. </li>
+                        <li>Al terminar, presione el logotipo de <b>Edmodo</b>.</li>
+                      </ol>
+                    </b-card-text>
+                  </b-card>
+                </b-col>
+              </b-row>
+              <b-row class="mb-2">
+                <b-col>
+                  <b-card title="Inicio de clase" img-src="https://i.postimg.cc/Kj0StH6h/pant5-edmodo.png" img-left class="mb-3">
+                    <b-card-text class="text-justify" style="margin-top:8%;">
+                      <ol>
+                        <li> Seleccione <b>"Crear una clase".</b></li>
+                        <li> Rellene la información correspondiente.</li>
+                      </ol>
+                    </b-card-text>
+                  </b-card>
+                </b-col>
+              </b-row>
+              <b-row class="mb-2">
+                <b-col>
+                  <b-card title="Agregar estudiantes" img-src="https://i.postimg.cc/qMQyCxgc/pant10-edmodo.png" img-left class="mb-3">
+                    <b-card-text class="text-justify" style="margin-top:8%;">
+                      <ol>
+                        <li>  Para agregar estudiantes presione <b>"Invitar"</b>. </b></li>
+                        <li>  Elija la opción de su preferencia. </li>
+                      </ol>
+                      <br>
+                      <p>
+                        Ahora que su cuenta esta lista le invitamos a explorar todas las posibilidades
+                        que Edmodo le ofrece, haciendo clic en Crear y los símbolos + podrá continuar su viaje por Edmodo.
+                      </p>
+                    </b-card-text>
+                  </b-card>
+                </b-col>
+              </b-row>
+            </div>
+
+            <div class=" container mt-4">
+              <h2 class="titulo mb-3" id ="estudiante">Primeros pasos (Estudiante).</h2>
+              <b-row class="mb-2">
+                <b-col>
+                  <b-card title="Unirse a un grupo" img-src="https://i.postimg.cc/2jGDp1V9/pant6-edmodo.png" img-right class="mb-3">
+                    <b-card-text class="text-justify" style="margin-top:5%;">
+                      <ol>
+                        <li>Vaya a <b>Edmodo</b>, e inicie sesión. </li>
+                        <li> Seleccione el botón <b>"Únete a un grupo"</b>. </li>
+                        <li> Ingrese el código y presione Unirse. </li>
+                      </ol>
+                    </b-card-text>
+                  </b-card>
+                </b-col>
+              </b-row>
+              <b-row class="mb-2">
+                <b-col>
+                  <b-card title="Vista de clase">
                     <b-card-text class="text-justify" >
-                        Ahora que su cuenta esta lista le invitamos a explorar
-                         todas las posibilidades que Edmodo le ofrece, haciendo
-                         clic en <b>Crear</b> y los símbolos <b>+</b> podrá continuar su viaje por Edmodo.
+                        En la columna izquierda usted podrá observar las separaciones de su clase a las cuales
+                         podrá acceder a su contenido haciendo clic. En la columna central se encontrará el contenido
+                         de la separación en la que usted se encuentre, y en la columna derecha se encuentra el calendario de eventos.
+
+                      <img src="https://i.postimg.cc/02Nq99Sk/pant7-edmodo.png" class="mb-3" style="display: block; width:95%; margin-left:auto; margin-right:auto;">
                     </b-card-text>
-                </b-card>
-            </div>
-            <div class=" container mt-4 ">
-                <h2 class="titulo mb-3" id="estudiante">Primeros pasos (Estudiante).</h2>
-                <b-row class="mb-2">
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 1 ">
-                            <b-card-text>
-                                Vaya a <b>Edmodo</b>, e inicie sesión.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 2 ">
-                            <b-card-text>
-                                Seleccione el botón <b>Únete a un grupo</b>.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-                </b-row>
-                <img src="..\assets\pant6-edmodo.png" alt="pant1" class="capturaPantalla">
-
-                <b-card class="lightCard" title="Paso 3 ">
-                    <b-card-text>
-                        Ingrese el código y presione Unirse.
-                    </b-card-text>
-                </b-card>
-                <br>
-                <b-row>
-                    <b-col>
-                        <b-card class="lightCard" title="Paso 4 ">
-                            <b-card-text class="text-justify">
-                                En la columna izquierda usted podrá observar las
-                                separaciones de su clase a las cuales podrá acceder a su contenido haciendo clic.
-                                En la columna central se encontrará el contenido de la separación en la que usted se encuentre,
-                                y en la columna derecha se encuentra el calendario de eventos.
-                            </b-card-text>
-                        </b-card>
-                    </b-col>
-
-                </b-row>
-                <br>
-                <b-row>
-                    <img src="..\assets\pant7-edmodo.png" alt="pant1" class="capturaPantalla" style="margin-left:auto; margin-right:auto;">
-                </b-row>
-
+                  </b-card>
+                </b-col>
+              </b-row>
             </div>
         </b-container>
     </div>

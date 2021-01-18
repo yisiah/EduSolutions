@@ -128,11 +128,11 @@
                   </b-list-group-item>
                   <b-list-group-item variant="secondary">
                     Primeros pasos (Profesor).
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoEdmodo', hash: '#profesor'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                   <b-list-group-item>
                     Primeros pasos (Estudiante).
-                    <router-link :to="{ name: 'siguiente'}" class="buttonList" size="lg" > Ir </router-link>
+                    <router-link :to="{ name: 'contenidoEdmodo', hash: '#estudiante'}" class="buttonList" size="lg" > Ir </router-link>
                   </b-list-group-item>
                 </b-list-group>
             </b-container>
