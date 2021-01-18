@@ -112,7 +112,9 @@
               <router-link :to="{ name: 'Bienvenida'}" size="lg">
                 <b-nav-item href="Bienvenida">Bienvenida</b-nav-item>
               </router-link>
-              <b-nav-item href="#">Sobre Nosotros</b-nav-item>
+              <router-link :to="{ name: 'SobreNosotros'}" tag="span" size="lg">
+                  <b-nav-item href="SobreNosotros">Sobre Nosotros</b-nav-item>
+              </router-link>
               <b-nav-item href="#">Contactanos</b-nav-item>
             </b-navbar-nav>
           </b-navbar-nav>
